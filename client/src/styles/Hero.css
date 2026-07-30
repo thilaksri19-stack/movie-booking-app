@@ -1,0 +1,48 @@
+.hero {
+  height: 80vh;
+  background-image: url("https://www.comingsoon.net/wp-content/uploads/sites/3/2026/07/the-odyssey-6.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  margin-left: 80px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.book-btn {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.book-btn:hover {
+  background: #dc2626;
+}
