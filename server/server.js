@@ -36,6 +36,10 @@ app.get("/", (req, res) => {
   res.send("Movie Booking API Running...");
 });
 
+app.get("/ping", (req, res) => {
+  res.send("pong");
+});
+
 // Start Server
 const PORT = process.env.PORT || 5000;
 
