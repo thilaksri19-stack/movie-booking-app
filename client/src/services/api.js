@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+export default axios.create({
+  baseURL: "https://movie-booking-app-production-91bb.up.railway.app/api",
 });
-
-export default API;
