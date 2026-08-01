@@ -9,14 +9,18 @@ const app = express();
 
 // Middleware
 
-app.use(cors());
+const cors = require("cors");
 
-app.use(express.json());
-app.use(express.json());
-const authRoutes = require("./routes/authRoutes");
-app.use("/api/auth", authRoutes);
-app.use("/api/movies", movieRoutes);
-app.use("/api/bookings", bookingRoutes);
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://127.0.0.1:5173",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 // MongoDB Connection
 mongoose
